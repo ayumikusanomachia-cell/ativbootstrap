@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayumi Kusano Machia">
+    <meta name="description" content="pets, petshop, animais, loja, banho, tosa, adopt, adoptpets">
+    <title>Adopt Pets</title>
+    <link rel="shortcut icon" href="pawprints.png" type="png" alt="Logo da marca">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css" />
+
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="contato.">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fotos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">De Clientes</a></li>
+                            <li><a class="dropdown-item" href="#">Das lojas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tudo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mt-3">
+        <form class="row g-3">
+            <h3>Cadastrando Produtos</h3>
+
+            <div class="col-md-8 col-ms-12">
+                <div class="form-floating">
+                    <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome do produto" required>
+                    <label for="nome">Nome do Produto</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-ms-12">
+                <div class="form-floating">
+                    <input type="text" name="codigo" id="codigo" class="form-control" placeholder="Código do produto" required>
+                    <label for="codigo">Código do produto</label>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-ms-12">
+                <div class="form-floating">
+                    <input type="text" name="funcionario_responsavel" id="funcionario_responsavel" class="form-control" placeholder="Funcionário Responsavel" required>
+                    <label for="funcionario_responsavel">Funcionário Responsavel</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-ms-12">
+                <div class="form-floating">
+                    <input type="number" step="0.50" name="valor" id="valor" class="form-control" placeholder="Valor do Produto">
+                    <label for="valor">Valor do Produto</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-ms-12">
+                <div class="form-floating">
+                    <input type="number" name="quantidade" id="quantidade" class="form-control" placeholder="Quantidade" required>
+                    <label for="quantidade">Quantidade</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-ms-12">
+                <div class="form-floating">
+                    <select name="categoria" class="form-select">
+                        <option value="" selected disabled>Selecione</option>
+                        <option value="roupa_acessorio">Roupa/Acessorio</option>
+                        <option value="cosmetico">Cosmético</option>
+                        <option value="alimento">Alimento</option>
+                    </select>
+                    <label for="categoria">Categoria</label>
+                </div>
+            </div>
+
+            <div class="col-md-8 col-sm-12"> 
+                <label class="form-label d-block">Fabricado em:</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="sp" class="form-check-input">
+                    <label for="sp" class="form-check-label">São Paulo</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="rj" class="form-check-input">
+                    <label for="rj" class="form-check-label">Rio de Janeiro</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="tipo" id="mg" class="form-check-input">
+                    <label for="mg" class="form-check-label">Minas Gerais</label>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-ms-12 mt-4">
+                <div class="form-floating">
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
+                    <button type="reset" class="btn btn-warning">Limpar</button>
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                </div>
+            </div>
+
+
+                </div>
+            </div>
+
+            
+
+        
+
+            
+
+        </form>
+    </div>
+   
+
+        
+        
+    <footer class="mb-3 mt-3 paidding-10" background-color>
+        <div class="text-bg-primary p-3">
+            <p><strong>Telefone:</strong> +55 (19) 9 1234-5678</p>
+            <p><strong>E-mail:</strong> adoptpets@test.com</p>
+            <p><strong>Intagram:</strong> @adoptpets.test</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
